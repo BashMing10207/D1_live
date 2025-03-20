@@ -13,5 +13,12 @@ UCLASS()
 class D1_API AD1PlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+public:
+AD1PlayerController();	
+
+protected:
+
+virtual void BeginPlay() override;
+void Input_Move(const FInputActionValue& InputActionValue);
+
 };
